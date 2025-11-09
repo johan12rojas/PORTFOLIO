@@ -1204,91 +1204,275 @@ body.light-mode .contacto button:hover{
 }
 
 /*SECCION RESPONSIVE*/
-@media screen and  (max-width: 980px){
-    nav{
-        display: none;
-    }
-    .nav-responsive{
-    display:block;
-    }
+@media screen and (max-width: 1024px){
     .contenedor-header header{
-        flex-wrap: wrap;
-        gap: 10px;
+        padding: 12px 16px;
+        gap: 16px;
     }
-    .acciones-header{
-        margin-left: auto;
-    }
-    nav.responsive{
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #252A2E;
-        width: 180px;
-    }
-    nav.responsive ul{
-        display: block !important;
-    }
-    nav.responsive ul li{
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
-    }
-}
-@media screen and(max-width:700px){
-    .acciones-header{
-        width: 100%;
-        justify-content: flex-end;
+    .inicio .contenido-banner{
+        max-width: 320px;
     }
     .sobremi .fila{
-        display: block;
+        gap: 24px;
+    }
+    .curriculum .contenido-seccion,
+    .skills .contenido-seccion,
+    .portfolio .contenido-seccion,
+    .contacto .contenido-seccion{
+        padding: 0 12px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .inicio{
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 16px 60px;
+        height: auto;
+        min-height: 100vh;
+    }
+    .inicio .contenido-banner{
+        margin: 70px auto 40px;
+        width: 100%;
+        backdrop-filter: blur(6px);
+    }
+    .inicio .contenido-banner img{
+        width: 160px;
+    }
+    .sobremi .fila{
+        flex-direction: column;
     }
     .sobremi .fila .col{
-        width: fit-content;
+        width: 100%;
     }
-
-    .sobremi .fila .col .contenedor-intereses .interes {
-        width: 60px;
-        height: 60px;}
-
     .skills .fila{
-        display: block;
+        flex-direction: column;
+        gap: 28px;
     }
     .skills .fila .col{
         width: 100%;
     }
-    .skills .fila .col .barra-skill{
-        width: 100%;
-    }
-
     .curriculum .fila{
-        display: block;
+        flex-direction: column;
+        gap: 24px;
     }
     .curriculum .fila .col{
-        width: 90%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: none;
+    }
+    .contenedor-header{
+        height: auto;
+        padding: 12px 0 14px;
+    }
+    .contenedor-header header{
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        padding: 0 16px;
+    }
+    .logo{
+        flex: 1 0 auto;
+    }
+    .acciones-header{
+        flex: 0 0 auto;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-responsive{
+        flex: 0 0 auto;
+        display:block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: calc(100% + 10px);
+        background-color: #252A2E;
+        width: min(220px, 80vw);
+        border-radius: 12px;
+        box-shadow: 0 16px 32px rgba(0,0,0,0.35);
+        overflow: hidden;
+        z-index: 100;
+    }
+    nav.responsive ul{
+        display: block !important;
+        padding: 12px 0;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        padding: 10px 20px;
+    }
+    nav.responsive ul li:last-child{
+        border-bottom: none;
+    }
+    .portfolio .galeria{
+        gap: 16px;
+    }
+    .portfolio .galeria .proyecto{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .contenedor-header header{
+        padding: 0 14px;
+    }
+    .logo a{
+        font-size: 32px;
+    }
+    .acciones-header{
+        gap: 8px;
+    }
+    .selector-idioma{
+        gap: 0;
+        padding: 3px 6px;
+        display: flex;
+        align-items: center;
+    }
+    .lang-btn,
+    .toggle-modo{
+        width: 32px;
+        height: 32px;
+    }
+    .nav-responsive{
+        margin-left: 4px;
+    }
+    .sobremi h2,
+    .skills h2,
+    .curriculum h2,
+    .portfolio h2,
+    .contacto h2{
+        font-size: 38px;
+    }
+    .portfolio-controls{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .portfolio .galeria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .contenedor-header header{
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+    .logo{
+        flex: 0 0 auto;
+    }
+    .acciones-header{
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+    .selector-idioma{
+        max-width: 96px;
+    }
+    .nav-responsive{
+        flex: 0 0 auto;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .inicio{
+        padding-top: 90px;
+    }
+    .inicio .contenido-banner{
+        padding: 18px 16px 28px;
+    }
+    .inicio .contenido-banner h1{
+        font-size: 32px;
+    }
+    .inicio .contenido-banner h2{
+        font-size: 14px;
+    }
+    .inicio .contenido-banner .redes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 18px;
+    }
+    .inicio .contenido-banner .redes a{
+        margin: 0;
     }
     .curriculum .fila .derecha{
-        margin-left: 20px;
-    }
-
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
+        margin-left: 0;
     }
     .contacto .fila{
         display: block;
     }
     .contacto .fila .col{
-        width:100%;
+        width: 100%;
+        padding: 0 10px;
     }
+    .contacto .col .info{
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 24px;
+        background-color: rgba(40,44,48,0.9);
+    }
+}
 
-}  
+@media screen and (max-width: 420px){
+    .inicio{
+        padding: 90px 12px 60px;
+    }
+    .inicio .contenido-banner{
+        border-radius: 28px;
+    }
+    .inicio .contenido-banner img{
+        width: 140px;
+    }
+    .sobremi button{
+        width: 100%;
+        max-width: 260px;
+    }
+    .portfolio .galeria{
+        grid-template-columns: 1fr;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 320px;
+    }
+    footer .redes a{
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        margin: 32px 4px 12px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .acciones-header{
+        gap: 6px;
+    }
+    .selector-idioma{
+        padding: 2px;
+    }
+    .lang-btn{
+        font-size: 11px;
+    }
+    .toggle-modo{
+        font-size: 14px;
+    }
+    .inicio .contenido-banner h1{
+        font-size: 28px;
+    }
+    .initio .contenido-banner h2{
+        font-size: 13px;
+    }
+}
 
 @media (prefers-reduced-motion: reduce){
     #bg-particles{display:none;}

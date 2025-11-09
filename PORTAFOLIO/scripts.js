@@ -541,9 +541,6 @@ function initRevealAnimations(){
         return;
     }
     revealInitialized = true;
-    applyReveal('.contenedor-header header', { type: 'fade-down' });
-    applyReveal('.inicio .contenido-banner', { type: 'zoom' });
-    applyReveal('.inicio .contenido-banner .redes a', { type: 'fade-up', stagger: 0.05 });
     applyReveal('.sobremi .contenido-seccion', { type: 'fade-up' });
     applyReveal('.sobremi .fila .col', { type: 'fade-up', stagger: 0.08 });
     applyReveal('.sobremi .contenedor-intereses .interes', { type: 'zoom', stagger: 0.03 });

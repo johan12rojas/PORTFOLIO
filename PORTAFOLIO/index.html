@@ -59,7 +59,7 @@
     </div>
     <!--SECCION INICIO-->
     <section id="inicio" class="inicio">
-        <video class="inicio-video" autoplay muted loop playsinline poster="img/fond0 (1).jpg">
+        <video class="inicio-video" autoplay muted loop playsinline>
             <source src="https://cdn.pixabay.com/video/2024/11/12/240968_large.mp4" type="video/mp4">
         </video>
         <div class="inicio-overlay"></div>
@@ -464,14 +464,19 @@
             <div class="fila">
                 <!--Formulario-->
                 <div class="col">
-                    <input type="text" placeholder="Your Name" data-i18n-placeholder="contact.name">
-                    <input type="text" placeholder="Phone Number" data-i18n-placeholder="contact.phone">
-                    <input type="text" placeholder="Email" data-i18n-placeholder="contact.email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" data-i18n-placeholder="contact.message"></textarea>
-                    <button class="btn-contacto">
-                        <span data-i18n="contact.send">Send Message</span>  <i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form class="contact-form" action="https://formsubmit.co/johanrojas100@gmail.com" method="POST" autocomplete="on">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
+                        <input type="hidden" name="_next" value="https://johan12rojas.netlify.app/#contacto">
+                        <input type="text" name="name" placeholder="Your Name" data-i18n-placeholder="contact.name" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" data-i18n-placeholder="contact.phone">
+                        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="contact.email" required>
+                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje" data-i18n-placeholder="contact.message" required></textarea>
+                        <button type="submit" class="btn-contacto">
+                            <span data-i18n="contact.send">Send Message</span>  <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
 
                 <!--Mapa-->
