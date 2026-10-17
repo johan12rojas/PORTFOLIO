@@ -35,6 +35,8 @@ const translations = {
         'cv.title': 'CV',
         'cv.education': 'Education',
         'cv.systems': 'Systems Engineering',
+        'cv.teachingDiploma': 'Diploma in Basic Fundamentals of Teaching',
+        'cv.englishCert': 'B1 Advanced English Level Certified',
         'cv.highschool': 'High School',
         'cv.experience': 'Experience',
         'cv.mechanic': 'Mechanic Assistant',
@@ -120,6 +122,8 @@ const translations = {
         'cv.title': 'CV',
         'cv.education': 'Educación',
         'cv.systems': 'Ingeniería de Sistemas',
+        'cv.teachingDiploma': 'Diplomado en Fundamentos Básicos para la Docencia',
+        'cv.englishCert': 'Nivel de Inglés B1 Advanced Certificado',
         'cv.highschool': 'Bachillerato',
         'cv.experience': 'Experiencia',
         'cv.mechanic': 'Auxiliar mecánico',
@@ -704,6 +708,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Asegurar que ningún overlay tenga estilos inline residuales
+    document.querySelectorAll('.portfolio .galeria .proyecto .overlay').forEach(overlay => {
+        overlay.removeAttribute('style');
+    });
+
     const portfolioProjects = Array.from(document.querySelectorAll('.portfolio .proyecto'));
     const prevBtn = document.getElementById('portfolio-prev');
     const nextBtn = document.getElementById('portfolio-next');
@@ -758,6 +767,60 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPortfolioPage(0);
 
     initRevealAnimations();
+
+    const contactForm = document.querySelector('.contact-form');
+    if(contactForm){
+        contactForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const statusDiv = document.getElementById('form-status');
+            const originalContent = submitBtn.innerHTML;
+            const currentLang = document.documentElement.lang || 'es';
+
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+            submitBtn.innerHTML = `<span>${currentLang === 'es' ? 'Enviando...' : 'Sending...'}</span> <i class="fa-solid fa-spinner fa-spin"></i>`;
+            
+            if(statusDiv) statusDiv.style.display = 'none';
+
+            const formData = new FormData(contactForm);
+
+            fetch('https://formsubmit.co/ajax/johanrojas100@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: formData
+            })
+            .then(response => {
+                if(response.ok){
+                    return response.json();
+                }
+                throw new Error('Network response was not ok.');
+            })
+            .then(data => {
+                contactForm.reset();
+                if(statusDiv){
+                    statusDiv.textContent = currentLang === 'es' ? '¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.' : 'Message sent successfully! We will get in touch soon.';
+                    statusDiv.style.color = '#1CB698';
+                    statusDiv.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                console.error('Error enviando formulario:', error);
+                if(statusDiv){
+                    statusDiv.textContent = currentLang === 'es' ? 'Hubo un error al enviar el mensaje. Por favor intenta de nuevo.' : 'There was an error sending the message. Please try again.';
+                    statusDiv.style.color = '#ef4444';
+                    statusDiv.style.display = 'block';
+                }
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = '1';
+                submitBtn.innerHTML = originalContent;
+            });
+        });
+    }
 
     efectoHabilidades();
 });
