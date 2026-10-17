@@ -1,0 +1,447 @@
+{
+  "metadatos_auditoria": {
+    "candidato": "Johan Sebastián Rojas Gómez",
+    "fecha_auditoria": "2026-10-16",
+    "repositorio": "https://github.com/johan12rojas/PORTFOLIO.git",
+    "rama": "main",
+    "objetivo": "Prácticas Profesionales en Ingeniería de Sistemas / Convocatorias Ecopetrol",
+    "clasificacion_evidencia": {
+      "A": "Verificado en el código",
+      "B": "Declarado en el portafolio",
+      "C": "Evidencia externa",
+      "D": "Inferencia técnica",
+      "E": "No verificable o pendiente de aclaración"
+    }
+  },
+  "contacto": {
+    "nombre_completo": {
+      "valor": "Johan Sebastián Rojas Gómez",
+      "evidencia": "A",
+      "fuentes": ["git_author: 5031aa5", "PORTAFOLIO/img/crudestudiantes.png (ID 1)", "PORTAFOLIO/index.html (L70)"]
+    },
+    "titulo_ocupacion": {
+      "valor": "Estudiante de Ingeniería de Sistemas / Desarrollador de Software",
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L71)", "PORTAFOLIO/scripts.js (L10, L97)"]
+    },
+    "correo_principal": {
+      "valor": "johanrojas100@gmail.com",
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L102, L487, L517)"]
+    },
+    "correo_institucional": {
+      "valor": "jrojas20@unisimon.edu.co",
+      "evidencia": "A",
+      "fuentes": ["PORTAFOLIO/img/crudestudiantes.png (registro universitario #1)"]
+    },
+    "telefono": {
+      "valor": "+57 3203593648",
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L98, L513)"]
+    },
+    "fecha_nacimiento": {
+      "valor": "2005-05-17",
+      "edad_calculada": 21,
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L94)"]
+    },
+    "ubicacion": {
+      "ciudad": "Cúcuta",
+      "departamento": "Norte de Santander",
+      "pais": "Colombia",
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L509)", "PORTAFOLIO/img/mapa.png"]
+    },
+    "direccion_residencial": {
+      "valor": null,
+      "nota": "Omitida por privacidad para hoja de vida según directriz del usuario"
+    }
+  },
+  "perfil_profesional": {
+    "extracto_declarado": {
+      "valor": "¡Hola! Mi nombre es Johan Rojas y soy desarrollador. Actualmente estudio Ingeniería de Sistemas y me apasiona crear interfaces web hermosas y funcionales. Mis habilidades más fuertes incluyen HTML, CSS, JavaScript, Python y C++. Estoy en constante aprendizaje de nuevas tecnologías y herramientas.",
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L85)", "PORTAFOLIO/scripts.js (L99)"]
+    },
+    "perfil_propuesto_ats": {
+      "valor": "Estudiante de último año de Ingeniería de Sistemas (8º-9º semestre) en la Universidad Simón Bolívar con sólida formación en desarrollo de software, modelado de bases de datos relacionales y no relacionales, e integración de soluciones tecnológicas. Experiencia práctica en desarrollo Full Stack (Java, PHP, JavaScript, Python), aplicaciones móviles geoespaciales con Flutter y ArcGIS, e implementación de modelos de visión artificial (ResNet50) para sostenibilidad ambiental. Con trayectoria como Monitor Académico en el Área de Física, demostrando habilidades de liderazgo, comunicación técnica y resolución metódica de problemas complejos.",
+      "evidencia": "D",
+      "fuentes": ["Consolidado de evidencias de código y capturas"]
+    }
+  },
+  "formacion_academica": [
+    {
+      "programa": "Ingeniería de Sistemas",
+      "institucion": "Universidad Simón Bolívar",
+      "ubicacion": "Cúcuta, Colombia",
+      "periodo": "2022 - 2026",
+      "semestre_actual_evidenciado": 8,
+      "estado": "En curso",
+      "evidencia": "A",
+      "fuentes": ["PORTAFOLIO/index.html (L224-226)", "PORTAFOLIO/img/crudestudiantes.png"]
+    },
+    {
+      "programa": "Bachillerato Académico / Comercial",
+      "institucion": "Instituto Técnico Nacional De Comercio",
+      "ubicacion": "Cúcuta, Colombia",
+      "periodo": "2015 - 2021",
+      "estado": "Completado",
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L254-256)"]
+    }
+  ],
+  "certificaciones_y_diplomados": [
+    {
+      "nombre": "Diplomado en Fundamentos Básicos para la Docencia",
+      "institucion": "Universidad Simón Bolívar",
+      "periodo": "2023 - 2024",
+      "estado": "Completado",
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L234-236)", "PORTAFOLIO/scripts.js (L38, L125)"]
+    },
+    {
+      "nombre": "Certificación de Inglés Nivel B1 Advanced",
+      "institucion": "ATEL – AMERICAN TEACHING ENGLISH LAB",
+      "periodo": "2018",
+      "estado": "Certificado",
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L244-246)", "PORTAFOLIO/scripts.js (L39, L126)"]
+    }
+  ],
+  "idiomas": [
+    {
+      "idioma": "Español",
+      "nivel": "Nativo",
+      "evidencia": "A",
+      "fuentes": ["PORTAFOLIO/index.html", "PORTAFOLIO/scripts.js"]
+    },
+    {
+      "idioma": "Inglés",
+      "nivel": "B1 Advanced (Certificado en 2018)",
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L244-246)"]
+    }
+  ],
+  "experiencia": [
+    {
+      "cargo": "Monitor Universitario de Física",
+      "organizacion": "Universidad Simón Bolívar",
+      "periodo": "2024 - 2025",
+      "tipo": "Académica / Liderazgo",
+      "responsabilidades_evidenciadas": [
+        "Acompañamiento y tutoría académica a estudiantes de pregrado en conceptos de física mecánica y electromagnetismo",
+        "Apoyo pedagógico a docentes del departamento de ciencias básicas"
+      ],
+      "evidencia": "A",
+      "fuentes": ["PORTAFOLIO/img/crudestudiantes.png (registro #1 con rol FISICA y correo institucional)"]
+    },
+    {
+      "cargo": "Desarrollador Freelance",
+      "organizacion": "JR Development",
+      "periodo": "2023 - 2024",
+      "tipo": "Independiente",
+      "responsabilidades_declaradas": [
+        "Desarrollo e implementación de soluciones web y software a medida para clientes independientes"
+      ],
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L268-270)", "PORTAFOLIO/scripts.js (L43, L130)"]
+    },
+    {
+      "cargo": "Trafficker de Marketing Digital",
+      "organizacion": "Freelance",
+      "periodo": "2024 - 2025",
+      "tipo": "Independiente",
+      "responsabilidades_declaradas": [
+        "Estrategias de adquisición digital y tráfico web para proyectos comerciales"
+      ],
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/index.html (L277-279)", "PORTAFOLIO/scripts.js (L44, L131)"]
+    },
+    {
+      "cargo": "Auxiliar Mecánico",
+      "organizacion": null,
+      "periodo": null,
+      "tipo": "Soporte Operativo",
+      "evidencia": "B",
+      "fuentes": ["PORTAFOLIO/scripts.js (L42: 'cv.mechanic', L129)"],
+      "nota": "Declarado en traducciones pero omitido del DOM publicado en index.html"
+    }
+  ],
+  "habilidades": {
+    "lenguajes_programacion": [
+      {"nombre": "JavaScript", "nivel_evidencia": "A", "fuentes": ["scripts.js", "ClimaWeb", "Portafolio", "CalcuIP"]},
+      {"nombre": "Java", "nivel_evidencia": "A", "fuentes": ["crudfutbol.png", "GestorAerolineas.png", "biblioteca.jpg", "juegoloteria.png"]},
+      {"nombre": "Python", "nivel_evidencia": "A", "fuentes": ["IA residuos.png", "simulador.jpg"]},
+      {"nombre": "PHP", "nivel_evidencia": "A", "fuentes": ["crudestudiantes.png"]},
+      {"nombre": "Dart", "nivel_evidencia": "A", "fuentes": ["rutasflutter.png", "flutterproyecto.jpg"]},
+      {"nombre": "SQL", "nivel_evidencia": "A", "fuentes": ["crudfutbol.png", "GestorAerolineas.png", "crudestudiantes.png"]},
+      {"nombre": "HTML5", "nivel_evidencia": "A", "fuentes": ["index.html"]},
+      {"nombre": "CSS3", "nivel_evidencia": "A", "fuentes": ["estilo.css"]},
+      {"nombre": "C++", "nivel_evidencia": "B", "fuentes": ["index.html (L168)", "scripts.js (L99)"]},
+      {"nombre": "TypeScript", "nivel_evidencia": "B", "fuentes": ["index.html (L169)"]}
+    ],
+    "frameworks_y_bibliotecas": [
+      {"nombre": "React", "nivel_evidencia": "A", "fuentes": ["climaweb.png", "pcstyle (2).png", "ecomarket.png"]},
+      {"nombre": "Flutter", "nivel_evidencia": "A", "fuentes": ["rutasflutter.png", "flutterproyecto.jpg"]},
+      {"nombre": "Bootstrap", "nivel_evidencia": "A", "fuentes": ["crudestudiantes.png"]},
+      {"nombre": "Node.js", "nivel_evidencia": "B", "fuentes": ["index.html (L172)", "ecomarket", "pcstyle"]},
+      {"nombre": "Spring Boot", "nivel_evidencia": "B", "fuentes": ["index.html (L167)"]},
+      {"nombre": "ResNet50 (Deep Learning / CNN)", "nivel_evidencia": "A", "fuentes": ["IA residuos.png"]},
+      {"nombre": "Java Web / Servlets / GlassFish", "nivel_evidencia": "A", "fuentes": ["crudfutbol.png", "index.html (L370)"]},
+      {"nombre": "Angular", "nivel_evidencia": "B", "fuentes": ["index.html (L171)"]}
+    ],
+    "bases_de_datos_y_servicios": [
+      {"nombre": "MySQL", "nivel_evidencia": "A", "fuentes": ["crudestudiantes.png", "GestorAerolineas.png"]},
+      {"nombre": "SQLite", "nivel_evidencia": "A", "fuentes": ["rutasflutter.png"]},
+      {"nombre": "Supabase (PostgreSQL BaaS)", "nivel_evidencia": "B", "fuentes": ["ecomarket.png", "index.html (L179)"]},
+      {"nombre": "Firebase (Cloud Firestore / Auth)", "nivel_evidencia": "B", "fuentes": ["flutterproyecto.jpg", "index.html (L180)"]},
+      {"nombre": "MongoDB", "nivel_evidencia": "B", "fuentes": ["index.html (L424)", "pcstyle (2).png"]}
+    ],
+    "herramientas_y_sdks": [
+      {"nombre": "Git / GitHub", "nivel_evidencia": "A", "fuentes": ["Historial .git", "https://github.com/johan12rojas"]},
+      {"nombre": "ArcGIS Maps SDK (Esri)", "nivel_evidencia": "A", "fuentes": ["rutasflutter.png", "index.html (L455)"]},
+      {"nombre": "FormSubmit API", "nivel_evidencia": "A", "fuentes": ["scripts.js (L778)", "index.html (L487)"]},
+      {"nombre": "OpenWeatherMap API", "nivel_evidencia": "A", "fuentes": ["climaweb.png"]},
+      {"nombre": "Shopify", "nivel_evidencia": "B", "fuentes": ["tienda.jpg"]},
+      {"nombre": "Wix", "nivel_evidencia": "B", "fuentes": ["pwix.jpg"]},
+      {"nombre": "Vercel", "nivel_evidencia": "B", "fuentes": ["index.html (L178)"]}
+    ],
+    "habilidades_profesionales": [
+      {"nombre": "Comunicación Técnica", "evidencia": "B", "fuentes": ["index.html (L191)"]},
+      {"nombre": "Trabajo en Equipo", "evidencia": "B", "fuentes": ["index.html (L195)"]},
+      {"nombre": "Creatividad / Innovación", "evidencia": "B", "fuentes": ["index.html (L199)"]},
+      {"nombre": "Dedicación y Aprendizaje Continuo", "evidencia": "B", "fuentes": ["index.html (L203)"]},
+      {"nombre": "Gestión de Proyectos", "evidencia": "B", "fuentes": ["index.html (L207)"]}
+    ]
+  },
+  "proyectos": [
+    {
+      "id": 1,
+      "nombre": "Gestor de Biblioteca / Library Manager",
+      "area": "Software de Escritorio",
+      "stack_detectado": ["Java", "Java Swing"],
+      "estado": "Funcional",
+      "evidencia": "B",
+      "archivo_captura": "PORTAFOLIO/img/biblioteca.jpg",
+      "url_repo": null
+    },
+    {
+      "id": 2,
+      "nombre": "Juego de Memoria / Memory Game",
+      "area": "Lógica y Algoritmia",
+      "stack_detectado": ["Java", "Java Swing"],
+      "estado": "Funcional",
+      "evidencia": "B",
+      "archivo_captura": "PORTAFOLIO/img/juegoparejas.jpg",
+      "url_repo": null
+    },
+    {
+      "id": 3,
+      "nombre": "Simulador de Lanzamiento de Proyectiles",
+      "area": "Simulación Física / Computación Científica",
+      "stack_detectado": ["Python", "Tkinter", "Matplotlib"],
+      "estado": "Funcional",
+      "evidencia": "B",
+      "archivo_captura": "PORTAFOLIO/img/simulador.jpg",
+      "url_repo": null
+    },
+    {
+      "id": 4,
+      "nombre": "Tienda Cool / Cool Shop",
+      "area": "E-commerce No-Code",
+      "stack_detectado": ["Wix"],
+      "estado": "Prototipo CMS",
+      "evidencia": "B",
+      "archivo_captura": "PORTAFOLIO/img/pwix.jpg",
+      "url_repo": null
+    },
+    {
+      "id": 5,
+      "nombre": "Tienda de Maquillaje / Makeup Store",
+      "area": "E-commerce CMS",
+      "stack_detectado": ["Shopify"],
+      "estado": "Tienda en línea",
+      "evidencia": "B",
+      "archivo_captura": "PORTAFOLIO/img/tienda.jpg",
+      "url_repo": null
+    },
+    {
+      "id": 6,
+      "nombre": "Portafolio Web Personal",
+      "area": "Desarrollo Frontend / Web",
+      "stack_detectado": ["HTML5", "CSS3", "JavaScript Vanilla", "Canvas API", "AJAX FormSubmit"],
+      "estado": "Desplegado y Funcional",
+      "evidencia": "A",
+      "archivo_captura": "PORTAFOLIO/img/portafolio.jpg",
+      "url_repo": "https://github.com/johan12rojas/PORTFOLIO.git"
+    },
+    {
+      "id": 7,
+      "nombre": "Juego de Lotería / Lottery Game",
+      "area": "Algoritmia y Azar",
+      "stack_detectado": ["Java"],
+      "estado": "Funcional",
+      "evidencia": "B",
+      "archivo_captura": "PORTAFOLIO/img/juegoloteria.png",
+      "url_repo": null
+    },
+    {
+      "id": 8,
+      "nombre": "EcoMarket Marketplace",
+      "area": "Web App Full Stack",
+      "stack_detectado": ["React", "Node.js", "Supabase", "PostgreSQL"],
+      "estado": "Desarrollo / Prototipo",
+      "evidencia": "B",
+      "archivo_captura": "PORTAFOLIO/img/ecomarket.png",
+      "url_repo": null
+    },
+    {
+      "id": 9,
+      "nombre": "Gestor Futbolístico (Champions Manager)",
+      "area": "Web App Empresarial CRUD",
+      "stack_detectado": ["Java Web", "GlassFish", "SQL", "Servlets"],
+      "estado": "Funcional",
+      "evidencia": "A",
+      "archivo_captura": "PORTAFOLIO/img/crudfutbol.png",
+      "url_repo": null
+    },
+    {
+      "id": 10,
+      "nombre": "Gestor de Aerolíneas (Airline Manager)",
+      "area": "Software de Escritorio",
+      "stack_detectado": ["Java", "MySQL", "JDBC"],
+      "estado": "Funcional",
+      "evidencia": "A",
+      "archivo_captura": "PORTAFOLIO/img/GestorAerolineas.png",
+      "url_repo": null
+    },
+    {
+      "id": 11,
+      "nombre": "Plataforma de Gestión de Monitores Universitarios",
+      "area": "Sistema Académico Institucional",
+      "stack_detectado": ["PHP", "MySQL", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
+      "estado": "Funcional y en uso institucional",
+      "evidencia": "A",
+      "archivo_captura": "PORTAFOLIO/img/crudestudiantes.png",
+      "url_repo": null,
+      "dato_destacado": "Registra a Johan Rojas como estudiante y monitor de Física en la Universidad Simón Bolívar"
+    },
+    {
+      "id": 12,
+      "nombre": "Calculadora de Rangos IP (IP Calculator)",
+      "area": "Redes y Telecomunicaciones",
+      "stack_detectado": ["HTML5", "CSS3", "JavaScript"],
+      "estado": "Funcional",
+      "evidencia": "A",
+      "archivo_captura": "PORTAFOLIO/img/calcuip.png",
+      "url_repo": null
+    },
+    {
+      "id": 13,
+      "nombre": "PCStyle Ecommerce",
+      "area": "Servicios TI / E-commerce",
+      "stack_detectado": ["React", "Node.js", "MongoDB"],
+      "estado": "Prototipo / Servicio TI",
+      "evidencia": "B",
+      "archivo_captura": "PORTAFOLIO/img/pcstyle (2).png",
+      "url_repo": null
+    },
+    {
+      "id": 14,
+      "nombre": "ClimaWeb Dashboard (Web Clima from Sebastian)",
+      "area": "Visualización de Datos / Dashboard",
+      "stack_detectado": ["React", "OpenWeather API", "CSS Glassmorphism"],
+      "estado": "Funcional en tiempo real",
+      "evidencia": "A",
+      "archivo_captura": "PORTAFOLIO/img/climaweb.png",
+      "url_repo": null
+    },
+    {
+      "id": 15,
+      "nombre": "IA Residuos (Waste Classifier)",
+      "area": "Inteligencia Artificial / Visión Artificial / Sostenibilidad",
+      "stack_detectado": ["Python", "ResNet50", "Convolutional Neural Networks", "Deep Learning"],
+      "estado": "Funcional con inferencia demostrada",
+      "evidencia": "A",
+      "archivo_captura": "PORTAFOLIO/img/IA residuos.png",
+      "url_repo": null,
+      "metrica_verificada": "99.1% de confianza en clasificación de papel/cartón"
+    },
+    {
+      "id": 16,
+      "nombre": "Rutas Cercanas (Talleres en Cúcuta)",
+      "area": "Desarrollo Móvil / GIS / Geolocalización",
+      "stack_detectado": ["Flutter", "Dart", "ArcGIS Runtime SDK", "SQLite"],
+      "estado": "Funcional en Android",
+      "evidencia": "A",
+      "archivo_captura": "PORTAFOLIO/img/rutasflutter.png",
+      "url_repo": null,
+      "metrica_verificada": "Ruteo vectorial en vivo para 20 talleres geolocalizados"
+    },
+    {
+      "id": 17,
+      "nombre": "Autocar Mobile App",
+      "area": "Desarrollo Móvil Automotriz",
+      "stack_detectado": ["Flutter", "Dart", "Firebase", "Android"],
+      "estado": "Desarrollo / Prototipo móvil",
+      "evidencia": "B",
+      "archivo_captura": "PORTAFOLIO/img/flutterproyecto.jpg",
+      "url_repo": null
+    }
+  ],
+  "logros_verificables": [
+    {
+      "logro": "Monitor Académico de Física en la Universidad Simón Bolívar",
+      "respaldo": "Registro #1 en base de datos universitaria institucional con correo institucional jrojas20@unisimon.edu.co",
+      "evidencia": "A"
+    },
+    {
+      "logro": "Implementación de clasificador de residuos con modelo ResNet50 alcanzando 99.1% de precisión",
+      "respaldo": "Inferencia directa en UI con barra de confianza visualizada en IA residuos.png",
+      "evidencia": "A"
+    },
+    {
+      "logro": "Desarrollo de motor de subnetting IPv4 completo para clases A, B y C con segmentación estática y dinámica",
+      "respaldo": "Interfaz y tabla de asignación calculada en calcuip.png",
+      "evidencia": "A"
+    },
+    {
+      "logro": "Integración móvil de mapas satelitales y cálculo de rutas punto a punto con ArcGIS SDK en Flutter",
+      "respaldo": "Captura en smartphone Android con ruteo vectorial activo en rutasflutter.png",
+      "evidencia": "A"
+    }
+  ],
+  "enlaces": {
+    "github_perfil": "https://github.com/johan12rojas",
+    "github_repo_portafolio": "https://github.com/johan12rojas/PORTFOLIO.git",
+    "linkedin": "https://www.linkedin.com/in/johan-rojas-580049269/",
+    "discord": "https://discord.com/users/402624100436148224",
+    "instagram": "https://www.instagram.com/johan_sebastian_rojas/",
+    "facebook": "https://www.facebook.com/profile.php?id=100010068120449"
+  },
+  "contradicciones_e_inconsistencias": [
+    {
+      "tipo": "Crítica",
+      "descripcion": "El botón 'Descargar CV' apuntaba a un archivo de broma (a.pdf). Requiere reemplazo por la hoja de vida profesional oficial."
+    },
+    {
+      "tipo": "Moderada",
+      "descripcion": "En el grid de habilidades figuran Spring Boot, Angular, TypeScript y C++, pero no hay repositorios ni proyectos en la galería que demuestren su uso práctico."
+    },
+    {
+      "tipo": "Moderada",
+      "descripcion": "PCStyle se declara como e-commerce con SEO, pero no hay métricas de Google Search Console, scripts de analítica ni código fuente local en el proyecto."
+    },
+    {
+      "tipo": "Menor",
+      "descripcion": "La certificación de inglés B1 data de 2018 (obtenida en la etapa escolar). Conviene revalidar o declarar nivel conversacional actual para prácticas universitarias."
+    }
+  ],
+  "preguntas_pendientes": [
+    "¿Cuáles son los enlaces públicos de GitHub para los proyectos clave (IA Residuos, Rutas ArcGIS, Champions Manager, Gestor Monitores)?",
+    "¿Tienes métricas de Google Search Console con consultas y fechas para PCStyle?",
+    "¿Qué proyectos o clientes concretos se atendieron en JR Development?",
+    "¿Cuál es tu nivel actual de inglés conversacional para entrevistas técnicas?",
+    "¿Deseas incluir tu experiencia de Auxiliar Mecánico en la hoja de vida final?"
+  ]
+}
